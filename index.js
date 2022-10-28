@@ -135,7 +135,7 @@ const addEngineer = () => {
 ////////////////////////////////////////////////////////////////////////
 addManager()
   .then(addEmployee)
-  .then(writeTeam = teamArray =>  {
+  .then(writeTeam = () =>  {
 return fs.writeFileSync(
   "./dist/team.html", 
   `<!DOCTYPE html>
